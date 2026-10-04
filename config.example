@@ -1,0 +1,15 @@
+# 苏州大学校园网网关账号配置
+# 复制为 config 后填写：cp config.example config && chmod 600 config
+#
+# 联通校园网：学号@cucc
+# 移动校园网：学号@zgyd
+# 电信校园网：学号@ctc
+USERNAME="2024123456@cucc"
+
+# 统一身份认证密码（即网关密码）
+PASSWORD="your_password_here"
+
+# 可选：强制指定校园网 WAN IP。
+# 一般留空让脚本自动探测；若自动探测失败，可在路由器状态页或浏览器访问
+# http://10.9.1.3 查看登录页 URL 里的 wlan_user_ip，填到这里。
+# WAN_IP="10.12.34.56"

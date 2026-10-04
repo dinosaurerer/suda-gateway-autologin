@@ -1,0 +1,10 @@
+[Unit]
+Description=SUDA Campus Gateway Auto Login
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/opt/suda_gateway/suda_gateway_login.sh
+StandardOutput=journal
+StandardError=journal

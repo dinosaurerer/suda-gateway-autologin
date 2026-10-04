@@ -1,0 +1,11 @@
+[Unit]
+Description=SUDA gateway auto login (boot + every 5 min)
+
+[Timer]
+OnBootSec=30s
+OnCalendar=*:0/5
+AccuracySec=10s
+Persistent=true
+
+[Install]
+WantedBy=timers.target
